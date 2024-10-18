@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+}
+
+.head-container {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.odin-logo {
+    height: auto;
+    width: 70px;
+}
+
+.lasagna-btn,
+.chicken-parmesan-btn,
+.cheesy-potato-btn {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.lasagna,
+.chicken-parmesan,
+.cheesy-potato {
+    height: auto;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.cheesy-potato {
+    height: 200px;
+}
+
+p {
+    text-align: center;
+    font-family: cursive;
+}

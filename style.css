@@ -1,48 +1,96 @@
+* {
+	box-sizing: border-box;
+	font-family: cursive;
+}
+
 body {
-    font-family: sans-serif;
+	margin: 0;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	background-image: -webkit-linear-gradient(80deg, rgba(125, 110, 100, 50), 
+		rgba(80, 80, 80, 0)), 
+		url(./images/recipe-background.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+
+	width: 900px;
+	border-radius: 0px 0px 25px 25px;
 }
 
 .head-container {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
+}
+
+.head-container > h1 {
+	color:  #eeee;
+	text-shadow: 5px 5px 3px rgb(68, 68, 68);
 }
 
 ul li {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 
 ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+	display: flex;
+	justify-content: space-around;
 }
 
 .odin-logo {
-    height: auto;
-    width: 70px;
+	height: auto;
+	width: 70px;
+}
+
+.recipes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.recipes > p {
+	color: #eee;
+	text-shadow: 2px 2px 5px#222222;
 }
 
 .lasagna-btn,
 .chicken-parmesan-btn,
 .cheesy-potato-btn {
-    border: 1px solid black;
-    border-radius: 50%;
+	border: none;
+	border-radius: 50%;
+	box-shadow: 15px 10px 15px rgba(36, 36, 36, 0.35);
+}
+
+.animation {
+	transition: 1s ease;
+}
+
+.animation :hover {
+	transition: 0.5s ease;
+	transform: scale(1.1);
 }
 
 .lasagna,
 .chicken-parmesan,
 .cheesy-potato {
-    height: auto;
-    width: 200px;
-    border-radius: 50%;
+	height: auto;
+	width: 200px;
+	border-radius: 50%;
 }
 
 .cheesy-potato {
-    height: 200px;
+	height: 200px;
 }
 
-p {
-    text-align: center;
-    font-family: cursive;
+@media screen and (max-width: 580px) {
+
+	ul {
+		display: flex;
+		flex-direction: column;
+	}
+
 }

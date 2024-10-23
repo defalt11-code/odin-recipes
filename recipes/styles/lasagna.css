@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 210, 189);
+}
+
+.content-recipe {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 46px;
+    margin: 80px 0px 80px 0px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+
+    border-radius: 18px;
+    border: 2px solid black;
+}
+
+.lasagna {
+    border-radius: 18px;
+    height: 300px;
+    width: 100%;
+}

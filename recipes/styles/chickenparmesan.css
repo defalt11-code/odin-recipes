@@ -1,0 +1,101 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: outfit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+
+  background-color: #8A9A5B;
+  margin: 150px 0px 150px 0px ;
+}
+
+.content-recipe {
+    display: flex;
+    flex-direction: column;
+  
+    width: 720px;
+    padding: 46px;  
+    border-radius: 35px;
+    background-color: white;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+
+  height: 350px;
+  margin-bottom: 20px;
+}
+
+.chicken-parmesan {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.title {
+  font-family: "young serif";
+  font-weight: 500;
+  color: hsl(24, 5%, 18%);
+
+  margin-bottom: 25px;
+}
+
+.description {
+  font-size: 18px;
+  color: hsl(30, 10%, 34%);
+
+  margin-bottom: 25px;
+}
+
+.title-2 {
+  color: #C04000;
+}
+
+.to-serve-container {
+  padding: 15px;
+  background-color: #fcebe2;
+  border-radius: 8px;
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 20px;
+}
+
+.title-3,
+.title-4,
+.title-5 {
+  font-family: "young serif";
+  color:  #C04000;
+}
+
+.ingredients-container,
+.cheese-spread-container {
+  border-bottom: 2px solid #C04000;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+ul, ol {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+li {
+  font-size: 18px;
+  line-height: 30px;
+  color: hsl(30, 10%, 34%);
+}
+
+.welcome-container {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+
+  color: hsl(24, 5%, 18%);
+  padding: 15px;
+  border-radius: 8px;
+  background-color: hsl(30, 54%, 90%);
+  box-shadow: 0px 2px 15px rgb(80, 80, 80, 0.5);
+}

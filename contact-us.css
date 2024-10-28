@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  font-family: karla;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(148, 38%, 91%);
+  height: 100vh;
+}
+
+input {
+  cursor: pointer;
+}
+
+.form-container {
+  padding: 25px;
+  border-radius: 15px;
+  background-color: white;
+  width: 500px;
+  height: 550px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstAndlastname-container,
+.generalAndsupport-container {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.input-containers {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.input-title {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.input-email-container {
+  margin-bottom: 20px;
+}
+
+.inputs {
+  margin-top: 5px;
+
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 35px;
+}
+
+.queryType-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6px;
+}
+
+.sup-span,
+.q-genSpan {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.general-query,
+.support-request {
+  margin-top: -5px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.message-box {
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
+
+.consent-container {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.submit-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.submit-btn {
+  flex: 1;
+
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(169, 82%, 27%);
+}
+
+.inputs:focus {
+  outline: none;
+}
+
+.submit-btn:active {
+  background-color: hsl(187, 24%, 22%);
+}

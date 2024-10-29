@@ -135,6 +135,7 @@ img {
 	font-size: 14px;
 	margin: 5px 0px 10px 0px;
 	text-align: left;
+	color: hsl(24, 5%, 18%);
 }
 
 ol {

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards</title>
+
+  <style>
+    
+    *{
+        box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      min-height: 100vh;
+      background-color: brown;
+      margin: 0;
+    }
+    
+    .container {
+      flex: 1;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      box-shadow: 0px 1px 15px rgb(73, 73, 73, 1.5);
+      background-color: grey;
+      width: 600px;
+    }
+
+    .cards-container {
+      position: relative;
+
+      width: 200px;
+      height: 300px;
+      border: 1px solid black;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+
+      width: 200px;
+      height: 300px;
+
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: 0px 1px 15px rgb(73, 73, 73, 1.5);
+      cursor: pointer;
+      transition: 1.5s ease;
+
+      padding: 10px;
+    }
+
+    .card-1 {
+      rotate: 25deg;
+      position: absolute;
+      left: 50px;
+    }
+
+    .card-2 {
+      rotate: 10deg;
+      position: absolute;
+      bottom: 5x;
+    }
+
+    .card-3 {
+      rotate: -10deg;
+      position: absolute;
+      right: 40px;
+      top: 15px;
+    }
+
+    .cards:hover {
+      transition: 0.5s ease;
+      transform: scale(1.1);
+    }
+
+
+    .cards-design {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 5px;
+      border: 2px solid black;
+      width: 150px;
+
+      flex: 1;
+    }
+
+    .top {
+      align-self: flex-start;
+    }
+
+    .bottom {
+      align-self: flex-end;
+      rotate: 180deg;
+    }
+
+    .props {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: absolute;
+      top: 170px;
+
+      margin-right: 150px;
+      height: 280px;
+      width: 280px;
+      border-radius: 50%;
+      background-color: brown;
+      box-shadow: 0px 1px 15px rgb(73, 73, 73, 1.5);
+    }
+
+    .circle {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+
+    .king {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .design1,
+    .design3 {
+      width: 60px;
+      height: 60px;
+      background-color: black;
+    }
+
+    .design1 {
+      align-self: flex-end;
+      border-radius: 0px 0px 0px 50px;
+    }
+
+    .design3 {
+      align-self: start;
+      border-radius: 0px 50px 0px 0px;
+    }
+
+    .A {
+      text-align: center;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      color: white;
+      background-color: black;
+    }
+
+    .A,
+    .K{
+      font-size: 80px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cards-container">
+      <div class="card-1 cards">
+        <span class="top">Q</span>
+        <div class="cards-design">
+
+        </div>
+        <span class="bottom">Q</span>
+      </div>
+      <div class="card-2 cards">
+        <span class="top">K</span>
+        <div class="cards-design king">
+          <div class="design1">
+
+          </div>
+
+          <div class="K">
+            K
+          </div>
+
+          <div class="design3">
+
+          </div>
+        </div>
+        <span class="bottom">K</span>
+      </div>
+      <div class="card-3 cards">
+        <span class="top">A</span>
+        <div class="cards-design">
+          <div class="A">A</div>
+        </div>
+        <span class="bottom">A</span>
+      </div>
+
+      <div class="props">
+        <div class="circle">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

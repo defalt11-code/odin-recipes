@@ -1,24 +1,25 @@
 * {
 	box-sizing: border-box;
 	font-family: cursive;
+	margin: 0;
 }
 
 body {
 	margin: 0;
 	font-family: sans-serif;
+	background-color: hsl(148, 38%, 91%);;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 .container {
 	background-image: -webkit-linear-gradient(80deg, rgba(125, 110, 100, 50), 
 		rgba(80, 80, 80, 0)), 
 		url(./images/recipe-background.jpg);
-	background-size:cover;
+	background-size: cover;
 	background-repeat: no-repeat;
-
-	width: 900px;
-	border-radius: 0px 0px 25px 25px;
+	height: 400px;
 }
 
 .head-container {
@@ -31,14 +32,44 @@ body {
 	text-shadow: 5px 5px 3px rgb(68, 68, 68);
 }
 
-ul li {
+.menu-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+li {
 	list-style-type: none;
 }
 
+.recipes-container {
+	border: 19px solid black;
+	width: 385px;
+	height: 700px;
+	position: relative;
+}
 
-ul {
-	display: flex;
-	justify-content: space-around;
+.recipe-one {
+	rotate: 25deg;
+	position: absolute;
+	left: 80px;
+}
+
+.recipe-two{
+	rotate: 10deg;
+	position: absolute;
+	bottom: 5px;
+}
+
+.recipe-three {
+	rotate: -10deg;
+	position: absolute;
+	right: 80px;
+	top: 15px;
+}
+
+.menu-container {
+	padding: 0;
 }
 
 .odin-logo {
@@ -46,10 +77,101 @@ ul {
 	width: 70px;
 }
 
-.recipes {
+button {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
+
+	width: 350px;
+	border: none;	
+	border-radius: 8px 8px 8px 8px;
+	box-shadow: 1px 5px 10px rgb(80, 80, 80);
+	background-color: white;
+	padding: 8px;
+	cursor: pointer;
+	transition: 1s ease;
+}
+
+button:hover {
+	transition: 0.5s ease;
+	transform: scale(1.1);
+}
+
+img {
+	border-radius: 8px;
+}
+
+.img-wrapper {
+	flex: 1;
+}
+
+.recipe-title {
+	font-family: "young serif";
+	font-weight: 500;
+	margin: 5px 0px 10px 0px;
+	color: hsl(24, 5%, 18%);
+
+	text-align: left;
+	font-size: 14px;
+}
+
+.description {
+	font-family: outfit;
+	font-size: 12px;
+	align-items: flex-start;
+	border-bottom: 1px solid black;
+	margin: 0;
+	padding-bottom: 10px;
+	text-align: left;
+}
+
+
+.instruction {
+	font-family: "young serif";
+	font-weight: 500;
+	font-size: 14px;
+	margin: 5px 0px 10px 0px;
+	text-align: left;
+	color: hsl(24, 5%, 18%);
+}
+
+ol {
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+	padding: 0;
+}
+
+.li-container {
+	font-family: outfit;
+	font-size: 13px;
+	color: hsl(24, 5%, 18%);
+}
+
+li {
+  line-height: 18px;
+  color: hsl(30, 10%, 34%);
+	text-align: left;
+}
+
+p {
+	font-family: outfit;
+	font-size: 12px;
+	color: hsl(24, 5%, 18%);
+	margin: 0;
+}
+
+strong {
+	font-family: outfit;
+	font-size: 13px;
+}
+
+.description-2 {
+	font-family: outfit;
+	font-size: 11px;
+	align-items: flex-start;
+	border-bottom: 1px solid black;
+	margin: 0;
 }
 
 .recipes > p {
@@ -57,43 +179,35 @@ ul {
 	text-shadow: 2px 2px 5px#222222;
 }
 
-.lasagna-btn,
-.chicken-parmesan-btn,
-.cheesy-potato-btn {
-	border: none;
-	border-radius: 50%;
-	box-shadow: 15px 10px 15px rgba(36, 36, 36, 0.35);
-}
-
-.animation {
-	transition: 1s ease;
-}
-
-.animation :hover {
-	transition: 0.5s ease;
-	transform: scale(1.1);
-}
 
 .lasagna,
 .chicken-parmesan,
 .cheesy-potato {
-	height: auto;
-	width: 200px;
-	border-radius: 50%;
+	width: 100%;
 }
 
-.cheesy-potato {
-	height: 200px;
-}
 
 .contact-us {
 	background-color: hsl(148, 38%, 91%);
 	padding: 8px 15px;
 	border-radius: 8px;
 
-	position: absolute;
+	position: fixed;
 	bottom: 20px;
 	right: 10px;
+}
+
+.color-container {
+	position: absolute;
+	left: 150px;
+	right: 0px;
+	top: 60%;
+	bottom: 0%;
+	
+	border-radius: 500px 0px 0px 0px;
+	box-shadow: 5px 0px 10px black;
+	background-image: url(/images/woodplank-background.jpg);
+	background-size: cover;
 }
 
 a {

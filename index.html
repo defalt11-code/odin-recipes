@@ -14,60 +14,185 @@
 	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-
 	<div class="container">
 		<div class="head-container">
 			<img class="odin-logo" src="https://www.theodinproject.com/mstile-310x310.png"
 			alt="The Odin Project Logo">
 			<h1>Odin Recipes</h1>
 		</div>
-
-		<div class="menu-container">
-			<ul>
-
-				<div class="recipe-one recipes">
-					<button class="lasagna-btn animation">
-						<li>
-							<a href="recipes/lasagna.html"
-								target="_blank" rel="noopener noreferrer">
-								<img class="lasagna animation" src="images/lasagna2.jpg">
-							</a>
-						</li>
+	</div>
+	<div class="menu-container">
+		<div class="recipes-container">
+			<div class="recipe-one recipes">
+				<a href="recipes/lasagna.html"
+					target="_blank" rel="noopener noreferrer">
+					<button class="lasagna-btn">
+						<div class="img-wrapper">
+							<img class="lasagna" src="images/lasagna.webp">
+						</div>
+						<h2 class="recipe-title">Simple Lasagna recipe</h2>
+						<p class="description">
+							These are the ingredients you'll need to make
+							this top-rated homemade lasagna recipe:
+						</p>
+						<h2 class="instruction">Instructions</h2>
+						<p class="description">
+							Making homemade lasagna much easier than it looks.
+							You'll find the full, step-by-step recipe below — 
+							but here's a brief overview of what you can expect:
+						</p>
+						<ol>
+							<li>
+								<div class="li-container">
+									<strong>Cook the meat:</strong> Cook the ground meat in a skillet until browned and crumbly.
+									Add the onion and continue cooking until it's translucent.
+									Stir in the canned tomato products, half of the parsley,
+									garlic, basil, 1.5 teaspoons of salt, oregano, and sugar.
+								</div>
+							</li>
+							<li>
+								<div class="li-container">
+									<strong>Cook the noodles:</strong> Boil the lasagna noodles in lightly salted
+									water until they're al dente.
+								</div>
+							</li>
+							<li>
+								<div class="li-container">
+									<strong>Make the Cheese layer:</strong> Mix cottage cheese, Parmesan cheese, eggs,
+									the remaining parsley,
+									the remaining salt, and pepper in a bowl.
+								</div>
+							</li>
+							<li>
+								<div class="li-container">
+									<strong>Assemble the lasagna:</strong> Layer the ingredients according to the recipe
+									(starting with sauce and ending with mozzarella)
+									until the lasagna is assembled.
+								</div>
+							</li>
+							<li>
+								<div class="li-container">
+									<strong>Bake the lasagna:</strong> Cover with foil and bake in the
+									preheated oven for about half an hour.
+									Remove the foil and continue baking until the top is golden brown.
+								</div>
+							</li>
+						</ol>
 					</button>
-					<p>Lasagna recipe</p>
-				</div>
+				</a>
+			</div>
+			<div class="recipe-two recipes">>
+				<a href="recipes/Chicken-parmesan.html"
+					target="_blank" rel="noopener noreferrer">
+					<button class="chicken-parmesan-btn">
+						<img class="chicken-parmesan animation" src="images/chicken-parmesan.webp">
+						<h2 class="recipe-title">New &#38; Improved Chicken Parmesan</h2>
+						<p class="description">I love chicken parm, especially when it's made with fresh mozzarella,
+							which it almost never is in restaurants. Of course,
+							at home we can use the real stuff,  but it can be pricey.
+							So I tried something new--a cheese spread using ricotta fortified with sharp Cheddar.
+						</p>
 
-				<div class="recipe-two recipes">
-					<button class="chicken-parmesan-btn animation">
-						<li>
-							<a href="recipes/Chicken-parmesan.html"
-								target="_blank" rel="noopener noreferrer">
-								<img class="chicken-parmesan animation" src="images/chicken-parmesan.jpg">
-							</a>
-						</li>
+						<div class="instruction-container">
+							<h2  class="instruction">Instruction</h2>
+							<ol>
+								<li>
+									<strong>Step 1</strong>
+									<p>
+										Preheat oven to 500 degrees F (260 degrees C).
+										Line a rimmed baking sheet with aluminum foil.
+									</p>
+								</li>
+								<li>
+									<strong>Step 2</strong>
+									<p>
+										Gently pound chicken breasts between 2 layers of plastic until each breast is evenly thick.
+										Place breasts on a plate and season 1 side with kosher salt and black pepper.
+										Sprinkle with flour; press flour to coat the entire surface and help it adhere.
+										Turn and repeat on second side with salt, pepper, and flour.
+									</p>
+								</li>
+								<li>
+									<strong>Step 3</strong>
+									<p>
+										Brush excess flour from plate; place the chicken breasts back on the plate.
+										Pour beaten egg over the breasts and coat each side. Cover bottom of a second plate with half the bread crumbs.
+										Transfer chicken to the bread crumbs. Push crumbs up sides of chicken.
+										Sprinkle on the remaining crumbs and thoroughly coat each side.
+									</p>
+								</li>
+								<li>
+							</ol>
+						</div>
 					</button>
-					<p>Chicken Parmesan recipe</p>
-				</div>
-
-				<div class="recipe-three recipes">
-					<button class="cheesy-potato-btn animation">
-						<li>
-							<a href="recipes/cheesy-ham-potato.html"
-								target="_blank"  rel="noopener noreferrer">
-								<img class="cheesy-potato animation" src="images/cheesy-potato.jpg">
-							</a>
-						</li>
+				</a>
+			</div>
+			<div class="recipe-three recipes">
+				<a href="recipes/cheesy-ham-potato.html"
+					target="_blank"  rel="noopener noreferrer">
+					<button class="cheesy-potato-btn">
+						<img class="cheesy-potato" src="images/cheesy-ham.webp">
+						<h4 class="recipe-title"> Simple Cheesy Ham Potato Bake Recipe</h4>
+						<p class="description">
+							An easy ham, cheese, and potato casserole.
+							I have been told by several people that this could possibly be the best thing they ever tasted. Cheese, ham, and hash browns make this a dish even your pickiest eater will like.
+							A delicious recipe your kids will beg you to make!
+						</p>
+						<div class="instruction-container">
+							<h2 class="instruction">Instructions</h2>
+							<ol>
+								<li>
+									<div class="li-container">
+										<strong>Step1</strong>
+										<p>Gather all ingredients.</p>
+									</div>
+								</li>
+								<li>
+									<div class="li-container">
+										<strong>Step2</strong>
+										<p>Preheat the oven to 350 degrees F (175 degrees C). Grease a 9x13-inch baking dish.</p>
+									</div>
+								</li>
+								<li>
+									<div class="li-container">
+										<strong>Step3</strong>
+										<p>
+											Stir hash browns, ham, cheese, onion, condensed soup, sour cream,
+											and butter in a large bowl; season with salt and pepper.
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="li-container">
+										<strong>Step4</strong>
+										<p>Transfer mixture to baking the prepared  dish and cover with aluminum foil</p>
+									</div>
+								</li>
+								<li>
+									<div class="li-container">
+										<strong>Step5</strong>
+										<p>
+											Bake until bubbly and cheese is melted, 45 minutes to 1 hour.
+											Remove foil and continue baking until brown, about 15 minutes more.
+										</p>
+									</div>
+								</li>
+							</ol>
+						</div>
 					</button>
-					<p>Cheesy Ham Potato Bake recipe</p>
-				</div>
-
-			</ul>
+				</a>	
+			</div>
 		</div>
 	</div>
-
-    <div class="contact-us">
-			<a target="_blank" href="contact-us.html">Contact Us</a>
+	<a target="_blank" href="contact-us.html">
+		<div class="contact-us">
+			Contact Us
 		</div>
-
+	</a>
 </body>
 </html>
+
+
+
+
+
